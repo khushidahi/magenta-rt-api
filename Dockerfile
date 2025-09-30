@@ -28,6 +28,9 @@ RUN apt-get update && \
 RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 1
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.12 1
 
+# Install distutils for Python 3.12 (required for pip)
+RUN apt-get update && apt-get install -y python3.12-distutils
+
 # Upgrade pip
 RUN python3 -m pip install --upgrade pip
 
