@@ -6,7 +6,7 @@ pydantic==2.5.0
 python-jose[cryptography]==3.3.0
 jax[cuda12_pip]==0.4.20
 flax==0.7.5
-tf-nightly==2.20.0.dev20250619
-tensorflow-text-nightly==2.20.0.dev20250316
+tf-nightly
+tensorflow-text-nightly
 tf2jax==0.3.8
 huggingface_hub
