@@ -1,15 +1,3 @@
----
-title: Magenta RT API
-emoji: 🎵
-colorFrom: purple
-colorTo: blue
-sdk: docker
-pinned: false
-license: apache-2.0
-app_port: 7860
-hardware: a100-large
----
-
 # 🎵 Magenta RT API
 
 A production-ready REST API for music generation using Google's [Magenta RealTime](https://github.com/magenta/magenta-realtime) model. Generate high-quality music from text descriptions or audio style references.
