@@ -38,8 +38,8 @@ RUN apt-get update && apt-get install -y curl
 # Install pip for Python 3.12 using get-pip.py (since distutils is not available for 3.12)
 RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.12
 
-# Upgrade pip
-RUN python3 -m pip install --upgrade pip
+# Upgrade pip and install setuptools (provides distutils for build environments)
+RUN python3.12 -m pip install --upgrade pip setuptools
 
 # Set working directory
 WORKDIR /app
