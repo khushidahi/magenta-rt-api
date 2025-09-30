@@ -52,9 +52,9 @@ RUN git clone https://github.com/magenta/magenta-realtime.git && \
     pip install -e .[gpu] && \
     pip install tf2jax==0.3.8 huggingface_hub
 
-# Install TensorFlow with text support
+# Install latest TensorFlow nightly builds
 RUN pip uninstall -y tensorflow tensorflow-cpu tensorflow-text && \
-    pip install tf-nightly==2.20.0.dev20250619 tensorflow-text-nightly==2.20.0.dev20250316
+    pip install --pre tf-nightly tensorflow-text-nightly
 
 # Copy requirements and install
 COPY requirements.txt .
