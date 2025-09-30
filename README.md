@@ -5,7 +5,8 @@ colorFrom: purple
 colorTo: blue
 sdk: docker
 pinned: false
-license: apache-2.0
+app_file: main.py
+pinned: false
 app_port: 7860
 hardware: l4x1
 ---
