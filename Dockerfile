@@ -1,3 +1,5 @@
+# Install distutils for the default python3 (needed for pip build environments)
+RUN apt-get update && apt-get install -y python3-distutils
 FROM nvidia/cuda:12.1.0-cudnn8-runtime-ubuntu22.04
 
 # Set environment variables
