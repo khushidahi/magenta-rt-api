@@ -7,7 +7,7 @@ sdk: docker
 pinned: false
 license: apache-2.0
 app_port: 7860
-hardware: a100-large
+hardware: l4x1
 ---
 
 # 🎵 Magenta RT API
